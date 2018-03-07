@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="847a6040ce3c47da96e25bd1cb3406c8" Name="Diagram1">
+        <EntityTypeShape EntityType="VilkaModel.BetOffer" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="VilkaModel.BetTarget" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VilkaModel.BetType" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VilkaModel.Event" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="VilkaModel.Outcome" Width="1.5" PointX="8" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VilkaModel.OutcomeType" Width="1.5" PointX="5.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="VilkaModel.Region" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VilkaModel.Sport" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="VilkaModel.FK_BetOffers_BetTargets" ManuallyRouted="false" />
+        <AssociationConnector Association="VilkaModel.FK_BetOffers_BetTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="VilkaModel.FK_BetOffers_Events" ManuallyRouted="false" />
+        <AssociationConnector Association="VilkaModel.FK_Events_Regions" ManuallyRouted="false" />
+        <AssociationConnector Association="VilkaModel.FK_Events_Sports" ManuallyRouted="false" />
+        <AssociationConnector Association="VilkaModel.FK_Outcomes_OutcomeTypes" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="VilkaModel.Site" Width="1.5" PointX="0.75" PointY="10.125" />
+        <AssociationConnector Association="VilkaModel.FK_Events_Sites" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
